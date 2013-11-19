@@ -1,0 +1,16 @@
+Pigner: Stanford NER in pig
+
+Pigner uses the Stanford Named Entity Recognizer: http://nlp.stanford.edu/ner/
+to perform a basic classification (NER) on input text lines. It is an implementation
+of a Pig user defined function for use in pig latin scripts. Pigner is provided as a 
+proof of concept or demo to illustrate how third party java code can be used in pig.
+
+Building:
+An Ant build.xml is provided to create the pigner jar. Dependencies are provided 
+with the source.
+
+Running:
+A demo application can be run by calling the pigernerdemo.sh script. This script
+runs pigner on the supplied sample.txt in pig local mode. In order for it to run
+$PIG_HOME should be set to wherever your pig-x.xx.x.jar resides. Please see the 
+demo scripts for details. 
